@@ -60,7 +60,7 @@ func GetBad(w http.ResponseWriter, r *http.Request){
 func ParamGetHandler(w http.ResponseWriter, r *http.Request){
 	vars := mux.Vars(r)
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte(fmt.Sprint("Hello, ", vars["PARAM"])))
+	w.Write([]byte(fmt.Sprint("Hello, ", vars["PARAM"], "!")))
 
 }
 
